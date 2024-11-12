@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Navigation() {
-  const path = usePathname();
+  const path = usePathname(); // 현재 url
   return (
     <nav>
       <ul>
