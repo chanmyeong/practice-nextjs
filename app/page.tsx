@@ -1,5 +1,12 @@
+import Navigation from "../components/navigation";
+
 export default function Page() {
-  return <h1>Hello!</h1>;
+  return (
+    <div>
+      <Navigation />
+      <h1>Home</h1>
+    </div>
+  );
 }
 
 // 디렉토리 구조 자체가 url ex) /company
