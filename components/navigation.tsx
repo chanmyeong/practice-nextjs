@@ -8,7 +8,7 @@ export default function Navigation() {
   const path = usePathname(); // 현재 url
   return (
     <nav className={styles.nav}>
-      <ul className={styles.list}>
+      <ul>
         <li>
           <Link href="/">Home</Link> {path === "/" ? "✅" : ""}
         </li>
