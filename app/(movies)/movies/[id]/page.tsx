@@ -1,12 +1,22 @@
 import { Suspense } from "react";
-import MovieInfo from "../../../../components/movie-info";
+import MovieInfo, { getMovie } from "../../../../components/movie-info";
 import MovieVideos from "../../../../components/movie-videos";
 
-export default async function MovieDetail({
-  params: { id },
-}: {
+interface IParams {
   params: { id: string };
-}) {
+}
+
+export async function generateMetadata({ params: { id } }: IParams) {
+  const movie = await getMovie(id);
+  return {
+    title: movie.title,
+  };
+}
+
+// generateMetadata 라는 함수 자체가 nestJS자체에 지정?되어 있는 느낌
+// 그래서 함수를 정의하기만 해도 동적으로 metadata가 변하는 것 같다.
+
+export default async function MovieDetail({ params: { id } }: IParams) {
   return (
     <div>
       <Suspense fallback={<h1>Loading movie info</h1>}>
