@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.poster {
+  width: 100%;
+  place-self: center;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.author {
+  color: rgb(28, 166, 190);
+  margin-bottom: 20px;
+}
+
+.link {
+  display: inline-block;
+  border: 1px solid rgb(37, 34, 34);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.link:hover {
+  text-decoration: none; /* 호버 시에도 밑줄 제거 */
+}
+.link:active {
+  text-decoration: none; /* 호버 시에도 밑줄 제거 */
+  transform: translateY(3px); /* 살짝 아래로 이동 */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* 그림자 줄어듦 */
+}

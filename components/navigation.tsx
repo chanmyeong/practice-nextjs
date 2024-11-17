@@ -1,20 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import styles from "../styles/navigation.module.css";
 
 export default function Navigation() {
-  const path = usePathname(); // 현재 url
   return (
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link href="/">Home</Link> {path === "/" ? "✅" : ""}
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/about-us">About Us</Link>{" "}
-          {path === "/about-us" ? "✅" : ""}
+          <Link href="/about">About</Link>
         </li>
       </ul>
     </nav>
