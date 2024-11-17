@@ -26,5 +26,3 @@ export default async function Book({
     </div>
   );
 }
-
-// a 의 target의 blanck -> 새로운 탭

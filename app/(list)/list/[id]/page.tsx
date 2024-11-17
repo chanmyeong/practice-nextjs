@@ -24,15 +24,18 @@ export default async function BookListPage(props: { params: IParams }) {
   const name = params.id;
   const books = await getBooks(name);
   return (
-    <div className={styles.container}>
-      {books.results.books.map((book) => (
-        <Book
-          title={book.title}
-          author={book.author}
-          book_image={book.book_image}
-          amazon_product_url={book.amazon_product_url}
-        />
-      ))}
+    <div className={styles.listBox}>
+      <p>BUSINESS BOOKS</p>
+      <div className={styles.container}>
+        {books.results.books.map((book) => (
+          <Book
+            title={book.title}
+            author={book.author}
+            book_image={book.book_image}
+            amazon_product_url={book.amazon_product_url}
+          />
+        ))}
+      </div>
     </div>
   );
 }

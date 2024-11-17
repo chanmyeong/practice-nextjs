@@ -8,25 +8,25 @@
 
 .title {
   font-size: 44px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .box {
   display: inline-block;
   padding: 10px 20px;
   margin: 10px;
-  border: 1px solid #ccc; /* 얇은 테두리 */
-  border-radius: 8px; /* 모서리를 둥글게 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 */
-  font-size: 16px; /* 텍스트 크기 */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
   text-align: center;
-  background-color: #fff; /* 배경색 */
-  cursor: pointer; /* 마우스 커서를 포인터로 */
-  transition: box-shadow 0.3s ease; /* 호버 시 부드러운 전환 효과 */
+  background-color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 .box:active {
-  text-decoration: none; /* 호버 시에도 밑줄 제거 */
-  transform: translateY(3px); /* 살짝 아래로 이동 */
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); /* 그림자 줄어듦 */
+  text-decoration: none;
+  transform: translateY(3px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
